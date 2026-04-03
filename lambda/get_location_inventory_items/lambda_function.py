@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     try:
         response = inventoryTable.query(
             IndexName = 'GSI_SK_PK',  # Your GSI name
-            KeyConditionExpression=Key('location_id').eq('location1') 
+            KeyConditionExpression=Key('location_id').eq('1') 
         )
         items = response['Items']
 
