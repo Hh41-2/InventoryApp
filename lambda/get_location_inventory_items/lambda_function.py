@@ -22,7 +22,7 @@ def lambda_handler(event, context):
 
         return {
             'statusCode': 200,
-            'body': json.dumps(items, default=str)  # Use str to handle any special types like Decimal
+            'body': json.dumps(items, default=str)  
         }
     except Exception as e:
         print(e)
