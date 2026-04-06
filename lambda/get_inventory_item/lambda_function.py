@@ -16,7 +16,7 @@ def lambda_handler(event, context):
             'body': json.dumps("Missing 'id' path parameter")
         }
     
-    if 'queryStringParameters' not in event or 'location_id' not in event['queryStringParamters']:
+    if 'queryStringParameters' not in event or 'location_id' not in event['queryStringParameters']:
         return {
             'statusCode': 400,
             'body': json.dumps("Missing 'location_id' query parameter")
