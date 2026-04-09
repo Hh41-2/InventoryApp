@@ -33,7 +33,7 @@ def lambda_handler(event, context):
                 'qty': data['qty'],
                 'price': data['price'],
                 'location_id': data['location_id']
-            }
+            } 
         )
         return {
             'statusCode': 200,
